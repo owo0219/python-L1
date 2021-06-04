@@ -1,0 +1,10 @@
+x,y=map(int,input().split())
+if (x>y):
+    x,y = y,x
+m=x
+x=y
+while(m>0):
+    y=x
+    x=m
+    m=y % x
+print(x)
